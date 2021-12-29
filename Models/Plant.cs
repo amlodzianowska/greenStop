@@ -20,11 +20,9 @@ namespace greenStop.Models
         [Required]
         public string Action {get;set;}
         [Required]
-        public string Watering {get;set;}
-        [Required]
-        public string Sun {get;set;}
-        [Required]
         public int Price {get;set;}
+        public string Watering {get;set;}
+        public string Sun {get;set;}
         [Required]
         public string Description {get;set;}
         public int UserId {get;set;}

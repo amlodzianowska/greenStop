@@ -6,44 +6,46 @@
     <form action="/addPlant" method="post">
         <h2 class="pb-2 font-weight-light">Create Listing</h2>
         <hr>
-        <div class="row pb-2 pt-2">
+        <div class="row pb-1 pt-2">
             <div class="col-3">
                 <h3 class="text-bold">PHOTOS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
             </div>
             <div class="col-9">
                 <div class="pf-photodrop">
-                    <button class="pf-upload-button pt-1 pb-1"><img class="pf-upload-icon" src="~/images/icons/upload_icon.png" alt="icon"> ADD PHOTOS</button>
+                    <button class="pf-upload-button pt-1 pb-1"><img class="pf-upload-icon"
+                            src="~/images/icons/upload_icon.png" alt="icon"> ADD PHOTOS</button>
                 </div>
             </div>
         </div>
         <hr>
-        <div class="row pb-2 pt-2">
+        <div class="row pb-1 pt-2">
             <div class="col-3">
                 <h3>TITLE</h3>
                 <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
                 <p asp-validation-for="PlantName" class="text-danger"></p>
             </div>
             <div class="col-9">
-                <input asp-for="PlantName" class="form-control" placeholder="What's your plant's name?">
+                <input asp-for="PlantName" class="form-control" placeholder="What's the name of your plant?">
             </div>
         </div>
         <hr>
-        <div class="row pb-2 pt-2">
+        <div class="row pb-1 pt-2">
             <div class="col-3">
                 <h3 class="pf-field-title">DESCRIPTION</h3>
                 <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
                 <p asp-validation-for="Description" class="text-danger"></p>
             </div>
             <div class="col-9">
-                <textarea rows="6" asp-for="Description" class="form-control" placeholder="Describe your plant!"></textarea>
+                <textarea rows="6" asp-for="Description" class="form-control"
+                    placeholder="Describe your plant!"></textarea>
             </div>
         </div>
         <hr>
-        <div class="row pb-2 pt-2">
+        <div class="row pb-1 pt-2">
             <div class="col-3">
                 <h3>SIZE</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+                <p class="text-muted">Size guide:<br>1"-12" - Small<br>1'-3' - Medium<br> > 3' - Large</p>
                 <p asp-validation-for="SizeUnit" class="text-danger"></p>
             </div>
             <div class="col-9">
@@ -55,7 +57,7 @@
             </div>
         </div>
         <hr>
-        <div class="row pb-2 pt-2">
+        <div class="row pb-1 pt-2">
             <div class="col-3">
                 <h3>TYPE</h3>
                 <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
@@ -63,7 +65,7 @@
             </div>
             <div class="col-9">
                 <select class="form-control" asp-for="Action">
-                    
+
                     @{
                         foreach (String k in ViewBag.plantTypes)
                         {
@@ -74,21 +76,64 @@
             </div>
         </div>
         <hr>
-        <div class="row pb-2 pt-2">
+        <div class="row pb-1 pt-2">
             <div class="col-3">
-                <h3>AVAILABILITY</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
-                <p asp-validation-for="PlantName" class="text-danger"></p>
+                <h3>AVAILABILITY & PRICE</h3>
+                <p class="text-muted">In case your plant isn't for sale, type "0" in Price field.</p>
+                <p asp-validation-for="Price" class="text-danger"></p>
             </div>
             <div class="col-9">
-                <select class="form-control" asp-for="Action">
-                    <option value="For Sale">For Sale</option>
-                    <option value="Not For Sale">Not For Sale</option>
-                    <option value="Exchange">Exchange</option>
-                </select>
+                <div class="row">
+                    <div class="col-6">
+                        <select class="form-control" asp-for="Action">
+                            <option value="For Sale">For Sale</option>
+                            <option value="Not For Sale">Not For Sale</option>
+                            <option value="Exchange">Exchange</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="Price" class="form-control" min="0" max="1000" placeholder="Price">
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
-        <input  type="submit" value="List This Plant" class="form-control btn btn-success mt-2">
+        <div class="row pb-1 pt-2">
+            <div class="col-3">
+                <h3>PLANT CARE</h3>
+                <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sed suscipit</p>
+                <p asp-validation-for="Price" class="text-danger"></p>
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-5">
+                        <select class="form-control" asp-for="Watering">
+                            @{
+                                foreach (String w in ViewBag.watering)
+                                {
+                                    <option value="@w">@w</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-control" asp-for="Sun">
+                            @{
+                                foreach (String s in ViewBag.sun)
+                                {
+                                    <option value="@s">@s</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                        <div><input class="form-check-input" type="checkbox" id="checkboxpet"></div>
+                        <div><label class="form-check-label" for="checkboxpet">Pet friendly?</label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <input type="submit" value="List This Plant" class="form-control btn btn-success mt-2">
     </form>
 </div>

@@ -110,8 +110,12 @@ namespace greenStop.Controllers
             // {
             //     return RedirectToAction("Logout");
             // }
-            string[] types = new string[] { "Succulent", "Cactus", "Palm", "Ivy", "Tropical", "Carnivorous", "Blossoming"};
+            string[] types = new string[] { "Succulent", "Cactus", "Palm", "Ivy", "Tropical", "Carnivorous", "Blossoming", "Bonsai Tree", "Fern"};
             ViewBag.plantTypes =  types;
+            string[] watering = new string[] { "Water every day", "Water every week", "Water every 1–2 weeks", "Water every 2–3 weeks"};
+            ViewBag.watering =  watering;
+            string[] sun = new string[] { "Bright indirect to low light", "Medium bright indirect light", "Bright indirect light", "Bright indirect to direct light", "Bright indirect to medium light", "Bright light"};
+            ViewBag.sun =  sun;
             
             return View();
         }
