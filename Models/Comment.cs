@@ -13,8 +13,8 @@ namespace greenStop.Models
         public string Text {get;set;}
         public int UserId {get;set;}
         public int PlantId {get;set;}
-        public User User {get;set;}
-        public Plant Plant {get;set;}
+        public User Commenter {get;set;}
+        public Plant PlantCommented {get;set;}
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
     }

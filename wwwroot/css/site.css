@@ -69,3 +69,98 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/* Plant form styles
+-------------------------------------------------- */
+.pf-photodrop {
+  background-color:white;
+  padding: 20px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pf-upload-icon {
+  height: 30px;
+}
+
+.pf-upload-button{
+  width: 300px;
+  justify-content: center;
+  background-color: #d9d5d2;
+  border: none;
+  border-radius: 2px;
+}
+
+form {
+  background-color: rgb(247, 247, 247);
+  padding: 30px;
+  border: 1px rgb(204, 204, 204) solid;
+  box-shadow: 2px 2px 2px rgb(240, 240, 240);
+}
+
+/* User Profile
+-------------------------------------------------- */
+
+.jumbotron-fluid {
+  background-image: url(../images/user/monstera.jpg);
+  height: 250px;
+  margin-bottom: 0;
+}
+
+
+.up-pic {
+  border-radius: 100%;
+  border: 3px whitesmoke solid;
+  height: 200px;
+  position: absolute;
+  top:170px;
+  left:150px;
+  z-index: 2;
+}
+
+.up-nav {
+  background-color: rgb(247, 247, 247);
+  height: 50px;
+  border: 1px rgb(204, 204, 204) solid;
+  box-shadow: 2px 2px 2px rgb(240, 240, 240);
+}
+.up-followers-number {
+  margin-bottom: -5px;
+  padding-bottom: 0;
+  text-align: center;
+  font-display: none;
+}
+
+.up-followers-text {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+.nav-container {
+  width: 60% !important;
+  position: absolute;
+  left: 400px;
+  display: flex !important;
+  align-content: center !important;
+  justify-content: space-evenly !important;
+}
+
+.card-img-top {
+  height: 15rem !important;
+  object-fit: cover !important;
+}
+
+.card-img-icon {
+  height: 25px;
+}
+
+/* One Plant Page
+-------------------------------------------------- */
+.p-image-main {
+  height: 400px !important;
+  object-fit: cover !important;
+}

@@ -11,7 +11,7 @@ namespace greenStop.Models
         public int LikeId {get;set;}
         public int UserId {get;set;}
         public int PlantId {get;set;}
-        public User User {get;set;}
-        public Plant Plant {get;set;}
+        public User Liker {get;set;}
+        public Plant PlantLiked {get;set;}
     }
 }

@@ -57,3 +57,12 @@ C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3
 C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\greenStop.dll
 C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\greenStop.pdb
 C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\greenStop.genruntimeconfig.cache
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Login.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Registration.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\LogReg.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewPlant.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\PlantForm.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\OnePlant.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\DummyUserProfile.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
+C:\Users\anmlo\Desktop\Dojo_Assignments\projects\greenStop\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserProfile.cshtml.g.cs

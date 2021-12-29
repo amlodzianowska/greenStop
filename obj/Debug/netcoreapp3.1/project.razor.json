@@ -14412,8 +14412,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\OnePlant.cshtml",
+      "TargetPath": "Views\\Home\\OnePlant.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\NewPlant.cshtml",
+      "TargetPath": "Views\\Home\\NewPlant.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14422,13 +14437,43 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\_Registration.cshtml",
+      "TargetPath": "Views\\Home\\_Registration.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\DummyUserProfile.cshtml",
+      "TargetPath": "Views\\Home\\DummyUserProfile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\UserProfile.cshtml",
+      "TargetPath": "Views\\Home\\UserProfile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\LogReg.cshtml",
+      "TargetPath": "Views\\Home\\LogReg.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\anmlo\\Desktop\\Dojo_Assignments\\projects\\greenStop\\Views\\Home\\PlantForm.cshtml",
+      "TargetPath": "Views\\Home\\PlantForm.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -1,0 +1,94 @@
+@model Plant
+
+
+<hr>
+<div class="container">
+    <form action="/addPlant" method="post">
+        <h2 class="pb-2 font-weight-light">Create Listing</h2>
+        <hr>
+        <div class="row pb-2 pt-2">
+            <div class="col-3">
+                <h3 class="text-bold">PHOTOS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+            </div>
+            <div class="col-9">
+                <div class="pf-photodrop">
+                    <button class="pf-upload-button pt-1 pb-1"><img class="pf-upload-icon" src="~/images/icons/upload_icon.png" alt="icon"> ADD PHOTOS</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row pb-2 pt-2">
+            <div class="col-3">
+                <h3>TITLE</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+                <p asp-validation-for="PlantName" class="text-danger"></p>
+            </div>
+            <div class="col-9">
+                <input asp-for="PlantName" class="form-control" placeholder="What's your plant's name?">
+            </div>
+        </div>
+        <hr>
+        <div class="row pb-2 pt-2">
+            <div class="col-3">
+                <h3 class="pf-field-title">DESCRIPTION</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+                <p asp-validation-for="Description" class="text-danger"></p>
+            </div>
+            <div class="col-9">
+                <textarea rows="6" asp-for="Description" class="form-control" placeholder="Describe your plant!"></textarea>
+            </div>
+        </div>
+        <hr>
+        <div class="row pb-2 pt-2">
+            <div class="col-3">
+                <h3>SIZE</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+                <p asp-validation-for="SizeUnit" class="text-danger"></p>
+            </div>
+            <div class="col-9">
+                <select class="form-control" asp-for="Size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row pb-2 pt-2">
+            <div class="col-3">
+                <h3>TYPE</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+                <p asp-validation-for="Kind" class="text-danger"></p>
+            </div>
+            <div class="col-9">
+                <select class="form-control" asp-for="Action">
+                    
+                    @{
+                        foreach (String k in ViewBag.plantTypes)
+                        {
+                            <option value="@k">@k</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row pb-2 pt-2">
+            <div class="col-3">
+                <h3>AVAILABILITY</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+                <p asp-validation-for="PlantName" class="text-danger"></p>
+            </div>
+            <div class="col-9">
+                <select class="form-control" asp-for="Action">
+                    <option value="For Sale">For Sale</option>
+                    <option value="Not For Sale">Not For Sale</option>
+                    <option value="Exchange">Exchange</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <input  type="submit" value="List This Plant" class="form-control btn btn-success mt-2">
+    </form>
+</div>

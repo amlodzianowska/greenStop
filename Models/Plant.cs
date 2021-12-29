@@ -13,16 +13,22 @@ namespace greenStop.Models
         [Required]
         public string PlantName {get;set;}
         [Required]
-        public int Size {get;set;}
+        public string Size {get;set;}
         [Required]
-        public string SizeUnit {get;set;}
+        public bool PetFriendly {get;set;}
         public string Kind {get;set;}
         [Required]
         public string Action {get;set;}
-        public int UserId {get;set;}
-        public User Owner {get;set;}
+        [Required]
+        public string Watering {get;set;}
+        [Required]
+        public string Sun {get;set;}
+        [Required]
+        public int Price {get;set;}
         [Required]
         public string Description {get;set;}
+        public int UserId {get;set;}
+        public User Owner {get;set;}
         public List<Comment> Comments { get; set;}
         public List<Like> Likes {get;set;}
         public DateTime CreatedAt {get;set;} = DateTime.Now;

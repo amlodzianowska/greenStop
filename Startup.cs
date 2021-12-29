@@ -42,7 +42,7 @@ namespace greenStop
             }
 
             app.UseSession();
-            
+
             app.UseStaticFiles();
 
             app.UseRouting();
